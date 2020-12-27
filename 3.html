@@ -3,14 +3,52 @@
 <head>
 <title>WEB-1 html</title>
 <meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="color.js"></script>
+<link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <h1><a href="web1_internet.html">Web</a></h1>
+    <input type="button" value="night" onclick="nightDayHandler(this)"> <!--onclick 에서 쓰이는 this는 value를 가르키지만 함수쓰면 x!-->
+    <div id="grid">
     <ol>
     <li><a href="1.html">html</a>  </li>
     <li><a href="2.html">css </a> </li>
     <li><a href="3.html">Javascript</a></li>
     </ol>
+    <!--
+     <input type="button" value="night" onclick=" 
+    
+    var target= document.querySelector('body');
+    if(this.value ==='night'){
+    target.style.backgroundColor='black';
+    target.style.color='white';
+    this.value='day';
+
+    var alist =document.querySelectorAll('a');
+    var i=0;
+        while (i <alist.length){
+            console.log(alist[i]);
+            alist[i].style.color='powderblue';
+        i= i+1;
+        }
+    }
+
+    else {
+    target.style.backgroundColor='white';
+    target.style.color='black'
+    this.value='night';
+
+    var alist =document.querySelectorAll('a');
+    var i=0;
+        while (i <alist.length){
+            console.log(alist[i]);
+            alist[i].style.color='blue';
+        i= i+1;
+        }
+    }
+    "> !-->
+    <div id="articel">
     <h1>Javascript</h1>
 <p>JavaScript (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, 
     multi-paradigm, and interpreted programming language. Alongside HTML and CSS, 
@@ -19,5 +57,26 @@
      The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in JavaScript engine. 
      Each of the many JavaScript engines represent a different implementation of JavaScript, all based on the ECMAScript specification, 
     with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.</p>
+</div>
+</div>
+    <p><div id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://operation.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></p>
 </body>
 </html>
